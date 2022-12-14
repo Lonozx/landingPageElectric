@@ -167,6 +167,7 @@ a{
 
 .container__services-list-item {
     width: 280px;
+    padding: 20px;
 }
 
 .container__contact {
