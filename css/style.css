@@ -3,11 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s linear;
 }
 
 img {
     width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
 }
 
 .container__hero {
@@ -54,10 +59,18 @@ img {
 
 .article-title {
     color: #EB5757;
-    font-size: 34px;
-    line-height: 38px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    /* line-height: 38px; */
 }
 
+
+.article-title--white{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 80px;
+}
 .helpful-text {
     color: #EB5757;
 }
@@ -81,7 +94,9 @@ img {
     padding: 0 250px;
     overflow-y: hidden;
     justify-content: center;
+    
 }
+
 
 .container__services-title {
     display: flex;
@@ -108,7 +123,7 @@ img {
 
 .text-description {
     padding: 20px 0;
-    font-family: 'SF Pro Display';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -121,8 +136,17 @@ img {
     color: #333333;
 }
 
-.container__services-list {
 
+
+.article-description{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.container__services-list {
+    
     display: flex;
     gap: 65px;
     justify-content: center;
@@ -135,8 +159,9 @@ img {
 .container__services-list-item-button {
     display: flex;
     align-items: center;
+    padding: 40px;
     gap: 20px;
-    justify-content: flex-start;
+    justify-content: center;
     /* width: 100wh; */
 }
 
@@ -207,7 +232,22 @@ img {
 
 
 .container__services-gallery-item:hover {
-    animation: touchBlock 2s infinite;
+    animation: touchBlock 1s normal;
+}
+
+.h1{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    
+}
+
+.h3{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .gallery-img {
@@ -222,10 +262,15 @@ img {
     padding: 40px 0;
 }
 
+.links{
+    font-size: 30px;
+}
+
+
 /* Buttons */
 
 .help-button {
-    width: 160px;
+    width: 100px;
     height: 50px;
     background: #F2C94C;
     border-radius: 40px;
@@ -255,7 +300,7 @@ img {
 }
 
 .button-contact {
-    width: 150px;
+    width: 170px;
     height: 50px;
     background: #EB5757;
     color: white;
@@ -285,7 +330,7 @@ img {
 
 
 .help-button:hover {
-    
+   width: 350px;
 }
 
 /* Button animations end */
@@ -294,6 +339,23 @@ img {
 @media (max-width:768px) {
     .container__services-title {
         padding: 0 10px;
+    }
+}
+
+@media (max-width:768px) {
+    .container__contact-data{
+        max-width: 210px;
+    }
+}
+@media (max-width:768px) {
+    .links{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .article-title {
+        font-size: 60px;
     }
 }
 
@@ -339,6 +401,7 @@ img {
         padding: 0 10px;
         width: 100px;
         height: 40px;
+        font-size: 10px;
     }
 }
 
@@ -351,6 +414,7 @@ img {
 @media (max-width:768px) {
     .button-contact {
         width: 100px;
+        font-size: 10px;
     }
 }
 
